@@ -1,8 +1,21 @@
-wp-config.php
-wp-content/uploads/
+# Ignorar todo excepto wp-content y .gitignore
+/*
+!.gitignore
+!wp-content/
+
+# Ignorar cachés y otros archivos temporales
 wp-content/cache/
+wp-content/uploads/
+wp-content/backups/
 wp-content/upgrade/
-*.log
-*.sql
-.env
-node_modules/
+
+# Ignorar sistema de WordPress
+wp-admin/
+wp-includes/
+license.txt
+readme.html
+xmlrpc.php
+wp-*.php
+.htaccess
+index.php
+local-xdebuginfo.php
